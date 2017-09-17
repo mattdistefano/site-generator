@@ -7,7 +7,9 @@ var countSlashes = function (path) { return (path.match(/\//g) || empty).length;
 var and = function (a, b) { return function (page) {
     return a(page) && b(page);
 }; };
-var normalizeRoot = function (root) { return root.endsWith('/') ? root : root + '/'; };
+var normalizeRoot = function (root) {
+    return root.endsWith('/') ? root : root + '/';
+};
 var compileQuery = function (query) {
     var predicate = function (page) { return true; };
     var root = query.root && normalizeRoot(query.root);
@@ -27,7 +29,21 @@ var compileQuery = function (query) {
         }
         if (typeof query.depth === 'number') {
             var depth_1 = root ? countSlashes(root) + query.depth : query.depth;
-            predicate = and(predicate, function (page) { return countSlashes(page.path) <= depth_1; });
+            predicate = and(predicate, function (page) { return countSlashes(page.path) === depth_1; });
+        }
+        else {
+            if (typeof query.minDepth === 'number') {
+                var minDepth_1 = root
+                    ? countSlashes(root) + query.minDepth
+                    : query.minDepth;
+                predicate = and(predicate, function (page) { return countSlashes(page.path) >= minDepth_1; });
+            }
+            if (typeof query.maxDepth === 'number') {
+                var maxDepth_1 = root
+                    ? countSlashes(root) + query.maxDepth
+                    : query.maxDepth;
+                predicate = and(predicate, function (page) { return countSlashes(page.path) <= maxDepth_1; });
+            }
         }
     }
     return function (pages) {

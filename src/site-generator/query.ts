@@ -11,7 +11,8 @@ const countSlashes = (path: string) => (path.match(/\//g) || empty).length;
 const and = (a: TPagePredicate, b: TPagePredicate) => (page: TPage) =>
   a(page) && b(page);
 
-const normalizeRoot = (root: string) => root.endsWith('/') ? root : root + '/';
+const normalizeRoot = (root: string) =>
+  root.endsWith('/') ? root : root + '/';
 
 const compileQuery = (query: Query) => {
   let predicate: TPagePredicate = page => true;
@@ -33,10 +34,21 @@ const compileQuery = (query: Query) => {
 
     if (typeof query.depth === 'number') {
       const depth = root ? countSlashes(root) + query.depth : query.depth;
-      predicate = and(
-        predicate,
-        page => countSlashes(page.path) <= depth
-      );
+      predicate = and(predicate, page => countSlashes(page.path) === depth);
+    } else {
+      if (typeof query.minDepth === 'number') {
+        const minDepth = root
+          ? countSlashes(root) + query.minDepth
+          : query.minDepth;
+        predicate = and(predicate, page => countSlashes(page.path) >= minDepth);
+      }
+
+      if (typeof query.maxDepth === 'number') {
+        const maxDepth = root
+          ? countSlashes(root) + query.maxDepth
+          : query.maxDepth;
+        predicate = and(predicate, page => countSlashes(page.path) <= maxDepth);
+      }
     }
   }
 

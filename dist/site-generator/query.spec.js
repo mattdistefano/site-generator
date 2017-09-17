@@ -432,7 +432,7 @@ describe('executeQuery', function () {
         query_1.executeQuery(query, pages);
         expect(query.results).toEqual(expected);
     });
-    it('should respect depth 0', function () {
+    it('should respect depth = 0', function () {
         var query = {
             root: '/folder-name/',
             type: 'page',
@@ -451,11 +451,143 @@ describe('executeQuery', function () {
         query_1.executeQuery(query, pages);
         expect(query.results).toEqual(expected);
     });
-    it('should respect depth 1', function () {
+    it('should respect depth = 1', function () {
         var query = {
             root: '/folder-name/',
             type: 'page',
             depth: 1
+        };
+        var expected = [
+            {
+                path: '/folder-name/sub-folder-name/other-file',
+                type: 'summary',
+                title: 'this is /folder-name/sub-folder-name/other-file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+            {
+                path: '/folder-name/sub-folder-name/file',
+                type: 'summary',
+                title: 'this is /folder-name/sub-folder-name/file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+            {
+                path: '/folder-name/other-sub-folder-name/other-file',
+                type: 'summary',
+                title: 'this is /folder-name/other-sub-folder-name/other-file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+        ];
+        query_1.executeQuery(query, pages);
+        expect(query.results).toEqual(expected);
+    });
+    it('should respect minDepth = 0', function () {
+        var query = {
+            root: '/folder-name/',
+            type: 'page',
+            minDepth: 0
+        };
+        var expected = [
+            {
+                path: '/folder-name/sub-folder-name/other-file',
+                type: 'summary',
+                title: 'this is /folder-name/sub-folder-name/other-file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+            {
+                path: '/folder-name/sub-folder-name/file',
+                type: 'summary',
+                title: 'this is /folder-name/sub-folder-name/file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+            {
+                path: '/folder-name/other-sub-folder-name/other-file',
+                type: 'summary',
+                title: 'this is /folder-name/other-sub-folder-name/other-file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+            {
+                path: '/folder-name/another-file',
+                type: 'summary',
+                title: 'this is /folder-name/another-file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            }
+        ];
+        query_1.executeQuery(query, pages);
+        expect(query.results).toEqual(expected);
+    });
+    it('should respect minDepth = 1', function () {
+        var query = {
+            root: '/folder-name/',
+            type: 'page',
+            minDepth: 1
+        };
+        var expected = [
+            {
+                path: '/folder-name/sub-folder-name/other-file',
+                type: 'summary',
+                title: 'this is /folder-name/sub-folder-name/other-file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+            {
+                path: '/folder-name/sub-folder-name/file',
+                type: 'summary',
+                title: 'this is /folder-name/sub-folder-name/file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+            {
+                path: '/folder-name/other-sub-folder-name/other-file',
+                type: 'summary',
+                title: 'this is /folder-name/other-sub-folder-name/other-file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            },
+        ];
+        query_1.executeQuery(query, pages);
+        expect(query.results).toEqual(expected);
+    });
+    it('should respect maxDepth = 0', function () {
+        var query = {
+            root: '/folder-name/',
+            type: 'page',
+            maxDepth: 0
+        };
+        var expected = [
+            {
+                path: '/folder-name/another-file',
+                type: 'summary',
+                title: 'this is /folder-name/another-file',
+                summary: 'Test file',
+                created: new Date(2017, 9, 14).toISOString(),
+                modified: new Date(2017, 9, 15).toISOString()
+            }
+        ];
+        query_1.executeQuery(query, pages);
+        expect(query.results).toEqual(expected);
+    });
+    it('should respect maxDepth = 1', function () {
+        var query = {
+            root: '/folder-name/',
+            type: 'page',
+            maxDepth: 1
         };
         var expected = [
             {

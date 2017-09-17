@@ -4,6 +4,8 @@ export interface Query {
     path?: string;
     limit?: number;
     depth?: number;
+    minDepth?: number;
+    maxDepth?: number;
     type?: 'page' | 'index';
     results?: PageSummary[];
 }
