@@ -92,7 +92,8 @@ exports.generate = function (basePath) { return tslib_1.__awaiter(_this, void 0,
             case 0: return [4 /*yield*/, processDir(basePath, basePath)];
             case 1:
                 pages = _a.sent();
-                return [2 /*return*/, processQueries(pages)];
+                processQueries(pages);
+                return [2 /*return*/, pages];
         }
     });
 }); };

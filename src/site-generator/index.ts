@@ -78,5 +78,7 @@ const processQueries = (pages: TPage[]) => pages.forEach(page =>
 export const generate = async (basePath: string) => {
   const pages = await processDir(basePath, basePath);
 
-  return processQueries(pages);
+  processQueries(pages);
+
+  return pages;
 };
