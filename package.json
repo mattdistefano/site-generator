@@ -1,0 +1,29 @@
+{
+  "name": "@mattdistefano/site-generator",
+  "version": "0.0.1",
+  "description": "Site generator library for mattdistefano.com",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "del-cli \"dist/**\"",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && jasmine JASMINE_CONFIG_PATH=jasmine.json"
+  },
+  "author": "Matt Distefano",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.54",
+    "@types/markdown-it": "0.0.4",
+    "@types/node": "^8.0.28",
+    "del-cli": "^1.1.0",
+    "jasmine": "^2.8.0",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "gray-matter": "^3.0.3",
+    "markdown-it": "^8.4.0",
+    "markdown-it-block-embed": "0.0.3",
+    "markdown-it-block-image": "0.0.3",
+    "markdown-it-container": "^2.0.0",
+    "tslib": "^1.7.1"
+  }
+}
