@@ -2,7 +2,8 @@
   "name": "@mattdistefano/site-generator",
   "version": "0.0.1",
   "description": "Site generator library for mattdistefano.com",
-  "main": "dist/index.js",
+  "main": "dist/index",
+  "typings": "dist/index",
   "scripts": {
     "clean": "del-cli \"dist/**\"",
     "build": "npm run clean && tsc",
