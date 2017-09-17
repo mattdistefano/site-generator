@@ -70,7 +70,7 @@ const processDir = async (dirPath: string, basePath: string) => {
 };
 
 const processQueries = (pages: TPage[]) => pages.forEach(page =>
-  Object.keys(page.queries).forEach(key =>
+  page.queries && Object.keys(page.queries).forEach(key =>
     executeQuery(page.queries[key], pages)
   )
 );

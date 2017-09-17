@@ -81,7 +81,7 @@ var processDir = function (dirPath, basePath) { return tslib_1.__awaiter(_this, 
     });
 }); };
 var processQueries = function (pages) { return pages.forEach(function (page) {
-    return Object.keys(page.queries).forEach(function (key) {
+    return page.queries && Object.keys(page.queries).forEach(function (key) {
         return query_1.executeQuery(page.queries[key], pages);
     });
 }); };
