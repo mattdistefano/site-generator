@@ -8,6 +8,8 @@ describe('toSummary', function () {
             type: 'page',
             title: 'this is a test',
             summary: 'Test file',
+            bannerUrl: 'test/image.jpg',
+            bannerAlt: 'banner alt text',
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString(),
             content: '<p>And this is some content.</p>'
@@ -17,6 +19,8 @@ describe('toSummary', function () {
             type: 'summary',
             title: 'this is a test',
             summary: 'Test file',
+            bannerUrl: 'test/image.jpg',
+            bannerAlt: 'banner alt text',
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString(),
         };
@@ -28,6 +32,8 @@ describe('toSummary', function () {
             type: 'index',
             title: 'this is a test index',
             summary: 'Test index',
+            bannerUrl: 'test/image.jpg',
+            bannerAlt: 'banner alt text',
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString(),
             content: '<p>And this is some content.</p>',
@@ -48,6 +54,8 @@ describe('toSummary', function () {
             type: 'summary',
             title: 'this is a test index',
             summary: 'Test index',
+            bannerUrl: 'test/image.jpg',
+            bannerAlt: 'banner alt text',
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString(),
             pages: [

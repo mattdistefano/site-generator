@@ -5,6 +5,8 @@ exports.toSummary = function (page) {
         path: page.path,
         title: page.title,
         summary: page.summary,
+        bannerUrl: page.bannerUrl,
+        bannerAlt: page.bannerAlt,
         created: page.created,
         modified: page.modified,
         type: 'summary'

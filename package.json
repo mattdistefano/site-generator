@@ -1,6 +1,6 @@
 {
   "name": "@mattdistefano/site-generator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Site generator library for mattdistefano.com",
   "main": "dist/index",
   "typings": "dist/index",
@@ -17,7 +17,7 @@
     "@types/node": "^8.0.28",
     "del-cli": "^1.1.0",
     "jasmine": "^2.8.0",
-    "typescript": "^2.5.2"
+    "typescript": "^2.6."
   },
   "dependencies": {
     "gray-matter": "^3.0.3",

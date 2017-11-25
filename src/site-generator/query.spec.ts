@@ -14,6 +14,8 @@ const pages: TPage[] = [
     type: 'index',
     title: 'this is /index/index',
     summary: 'Test index',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>',
@@ -23,6 +25,8 @@ const pages: TPage[] = [
         type: 'summary',
         title: 'this is /a-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
@@ -33,6 +37,8 @@ const pages: TPage[] = [
         type: 'summary',
         title: 'this is /folder-name/index',
         summary: 'Test index',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString(),
         pages: [
@@ -41,6 +47,8 @@ const pages: TPage[] = [
             type: 'summary',
             title: 'this is /folder-name/another-file',
             summary: 'Test file',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString()
           }
@@ -51,6 +59,8 @@ const pages: TPage[] = [
             type: 'summary',
             title: 'this is /folder-name/sub-folder-name/index',
             summary: 'Test index',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString(),
             pages: [
@@ -59,6 +69,8 @@ const pages: TPage[] = [
                 type: 'summary',
                 title: 'this is /folder-name/sub-folder-name/file',
                 summary: 'Test file',
+                bannerAlt: undefined,
+                bannerUrl: undefined,
                 created: new Date(2017, 9, 14).toISOString(),
                 modified: new Date(2017, 9, 15).toISOString()
               },
@@ -67,6 +79,8 @@ const pages: TPage[] = [
                 type: 'summary',
                 title: 'this is /folder-name/sub-folder-name/other-file',
                 summary: 'Test file',
+                bannerAlt: undefined,
+                bannerUrl: undefined,
                 created: new Date(2017, 9, 14).toISOString(),
                 modified: new Date(2017, 9, 15).toISOString()
               }
@@ -78,6 +92,8 @@ const pages: TPage[] = [
             type: 'summary',
             title: 'this is /folder-name/other-sub-folder-name/index',
             summary: 'Test index',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString(),
             pages: [
@@ -101,6 +117,8 @@ const pages: TPage[] = [
     type: 'page',
     title: 'this is /a-file',
     summary: 'Test file',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>'
@@ -110,6 +128,8 @@ const pages: TPage[] = [
     type: 'index',
     title: 'this is /folder-name/index',
     summary: 'Test index',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>',
@@ -119,6 +139,8 @@ const pages: TPage[] = [
         type: 'summary',
         title: 'this is /folder-name/another-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
@@ -129,6 +151,8 @@ const pages: TPage[] = [
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/index',
         summary: 'Test index',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString(),
         pages: [
@@ -137,6 +161,8 @@ const pages: TPage[] = [
             type: 'summary',
             title: 'this is /folder-name/sub-folder-name/file',
             summary: 'Test file',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString()
           },
@@ -145,6 +171,8 @@ const pages: TPage[] = [
             type: 'summary',
             title: 'this is /folder-name/sub-folder-name/other-file',
             summary: 'Test file',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString()
           }
@@ -156,6 +184,8 @@ const pages: TPage[] = [
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/index',
         summary: 'Test index',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString(),
         pages: [
@@ -164,6 +194,8 @@ const pages: TPage[] = [
             type: 'summary',
             title: 'this is /folder-name/other-sub-folder-name/other-file',
             summary: 'Test file',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString()
           }
@@ -177,6 +209,8 @@ const pages: TPage[] = [
     type: 'page',
     title: 'this is /folder-name/another-file',
     summary: 'Test file',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>'
@@ -186,6 +220,8 @@ const pages: TPage[] = [
     type: 'index',
     title: 'this is /folder-name/sub-folder-name/index',
     summary: 'Test index',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>',
@@ -195,6 +231,8 @@ const pages: TPage[] = [
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -203,6 +241,8 @@ const pages: TPage[] = [
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
@@ -214,6 +254,8 @@ const pages: TPage[] = [
     type: 'page',
     title: 'this is /folder-name/sub-folder-name/file',
     summary: 'Test file',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>'
@@ -223,6 +265,8 @@ const pages: TPage[] = [
     type: 'page',
     title: 'this is /folder-name/sub-folder-name/other-file',
     summary: 'Test file',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>'
@@ -232,6 +276,8 @@ const pages: TPage[] = [
     type: 'index',
     title: 'this is /folder-name/other-sub-folder-name/index',
     summary: 'Test index',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>',
@@ -241,6 +287,8 @@ const pages: TPage[] = [
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
@@ -252,6 +300,8 @@ const pages: TPage[] = [
     type: 'page',
     title: 'this is /folder-name/other-sub-folder-name/other-file',
     summary: 'Test file',
+    bannerAlt: undefined,
+    bannerUrl: undefined,
     created: new Date(2017, 9, 14).toISOString(),
     modified: new Date(2017, 9, 15).toISOString(),
     content: '<p>And this is some content.</p>'
@@ -270,6 +320,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString(),
       }
@@ -292,6 +344,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/index',
         summary: 'Test index',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString(),
         pages: [
@@ -300,6 +354,8 @@ describe('executeQuery', () => {
             type: 'summary',
             title: 'this is /folder-name/sub-folder-name/file',
             summary: 'Test file',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString()
           },
@@ -308,6 +364,8 @@ describe('executeQuery', () => {
             type: 'summary',
             title: 'this is /folder-name/sub-folder-name/other-file',
             summary: 'Test file',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString()
           }
@@ -319,6 +377,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/index',
         summary: 'Test index',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString(),
         pages: [
@@ -327,6 +387,8 @@ describe('executeQuery', () => {
             type: 'summary',
             title: 'this is /folder-name/other-sub-folder-name/other-file',
             summary: 'Test file',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString()
           }
@@ -338,6 +400,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/index',
         summary: 'Test index',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString(),
         pages: [
@@ -346,6 +410,8 @@ describe('executeQuery', () => {
             type: 'summary',
             title: 'this is /folder-name/another-file',
             summary: 'Test file',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString()
           }
@@ -356,6 +422,8 @@ describe('executeQuery', () => {
             type: 'summary',
             title: 'this is /folder-name/sub-folder-name/index',
             summary: 'Test index',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString(),
             pages: [
@@ -364,6 +432,8 @@ describe('executeQuery', () => {
                 type: 'summary',
                 title: 'this is /folder-name/sub-folder-name/file',
                 summary: 'Test file',
+                bannerAlt: undefined,
+                bannerUrl: undefined,
                 created: new Date(2017, 9, 14).toISOString(),
                 modified: new Date(2017, 9, 15).toISOString()
               },
@@ -372,6 +442,8 @@ describe('executeQuery', () => {
                 type: 'summary',
                 title: 'this is /folder-name/sub-folder-name/other-file',
                 summary: 'Test file',
+                bannerAlt: undefined,
+                bannerUrl: undefined,
                 created: new Date(2017, 9, 14).toISOString(),
                 modified: new Date(2017, 9, 15).toISOString()
               }
@@ -383,6 +455,8 @@ describe('executeQuery', () => {
             type: 'summary',
             title: 'this is /folder-name/other-sub-folder-name/index',
             summary: 'Test index',
+            bannerAlt: undefined,
+            bannerUrl: undefined,
             created: new Date(2017, 9, 14).toISOString(),
             modified: new Date(2017, 9, 15).toISOString(),
             pages: [
@@ -391,6 +465,8 @@ describe('executeQuery', () => {
                 type: 'summary',
                 title: 'this is /folder-name/other-sub-folder-name/other-file',
                 summary: 'Test file',
+                bannerAlt: undefined,
+                bannerUrl: undefined,
                 created: new Date(2017, 9, 14).toISOString(),
                 modified: new Date(2017, 9, 15).toISOString()
               }
@@ -418,6 +494,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -426,6 +504,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -434,6 +514,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -442,6 +524,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/another-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
@@ -465,6 +549,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/another-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
@@ -488,6 +574,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -496,6 +584,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -504,6 +594,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -527,6 +619,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -535,6 +629,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -543,6 +639,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -551,6 +649,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/another-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
@@ -574,6 +674,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -582,6 +684,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -590,6 +694,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -613,6 +719,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/another-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
@@ -636,6 +744,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -644,6 +754,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/sub-folder-name/file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -652,6 +764,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/other-sub-folder-name/other-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       },
@@ -660,6 +774,8 @@ describe('executeQuery', () => {
         type: 'summary',
         title: 'this is /folder-name/another-file',
         summary: 'Test file',
+        bannerAlt: undefined,
+        bannerUrl: undefined,
         created: new Date(2017, 9, 14).toISOString(),
         modified: new Date(2017, 9, 15).toISOString()
       }
