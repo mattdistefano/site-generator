@@ -1,6 +1,6 @@
 {
   "name": "@mattdistefano/site-generator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Site generator library for mattdistefano.com",
   "main": "dist/index",
   "typings": "dist/index",

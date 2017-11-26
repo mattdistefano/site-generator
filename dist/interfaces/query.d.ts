@@ -8,6 +8,7 @@ export interface Query {
     maxDepth?: number;
     type?: 'page' | 'index';
     results?: PageSummary[];
+    linkText?: string;
 }
 export interface Queries {
     [name: string]: Query;
