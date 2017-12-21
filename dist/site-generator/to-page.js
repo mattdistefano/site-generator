@@ -16,7 +16,7 @@ md.use(blockImagePlugin, {
 });
 md.use(blockEmbedPlugin, {
     containerClassName: 'video-embed',
-    serviceClassPrefix: 'video-embed--'
+    serviceClassPrefix: 'video-embed--',
 });
 var toIsoDate = function (dateString) {
     var d = new Date(dateString);

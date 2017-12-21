@@ -1,2 +1,2 @@
-import { Page, IndexPage } from '../interfaces';
-export declare const generate: (basePath: string) => Promise<(Page | IndexPage)[]>;
+import { TPage } from '../interfaces';
+export declare const generate: (basePath: string) => Promise<TPage[]>;

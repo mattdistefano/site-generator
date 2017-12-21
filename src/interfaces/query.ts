@@ -1,4 +1,5 @@
 import { PageSummary } from './page-summary';
+import { TPage } from './page';
 
 export interface Query {
   /* Root path from which to select multiple pages */
@@ -15,8 +16,10 @@ export interface Query {
   maxDepth?: number;
   /* Types of pages to select */
   type?: 'page' | 'index';
+  /* Whether to summarize the result or include the whole page */
+  summarize?: boolean;
   /* Array of results */
-  results?: PageSummary[];
+  results?: (PageSummary | TPage)[];
   /* Text of link to root or path */
   linkText?: string;
 }

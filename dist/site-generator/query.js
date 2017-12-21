@@ -51,6 +51,9 @@ var compileQuery = function (query) {
         if (typeof query.limit === 'number') {
             results = results.slice(0, query.limit);
         }
+        if (query.summarize === false) {
+            return results;
+        }
         return results.map(to_summary_1.toSummary);
     };
 };

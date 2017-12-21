@@ -1,4 +1,5 @@
 import { PageSummary } from './page-summary';
+import { TPage } from './page';
 export interface Query {
     root?: string;
     path?: string;
@@ -7,7 +8,8 @@ export interface Query {
     minDepth?: number;
     maxDepth?: number;
     type?: 'page' | 'index';
-    results?: PageSummary[];
+    summarize?: boolean;
+    results?: (PageSummary | TPage)[];
     linkText?: string;
 }
 export interface Queries {

@@ -59,6 +59,10 @@ const compileQuery = (query: Query) => {
       results = results.slice(0, query.limit);
     }
 
+    if (query.summarize === false) {
+      return results;
+    }
+
     return results.map(toSummary) as PageSummary[];
   };
 };

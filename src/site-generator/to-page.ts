@@ -22,7 +22,7 @@ md.use(blockImagePlugin, {
 
 md.use(blockEmbedPlugin, {
   containerClassName: 'video-embed',
-  serviceClassPrefix: 'video-embed--'
+  serviceClassPrefix: 'video-embed--',
 });
 
 const toIsoDate = (dateString: string) => {
