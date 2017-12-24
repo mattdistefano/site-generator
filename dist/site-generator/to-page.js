@@ -13,7 +13,7 @@ var markdownItOptions = {
     html: true,
     typographer: true
 };
-var md = new MarkdownIt('commonmark', markdownItOptions);
+var md = new MarkdownIt(markdownItOptions);
 md.use(blockImagePlugin, {
     outputContainer: 'div',
     containerClassName: 'image-container'

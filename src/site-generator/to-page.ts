@@ -15,7 +15,7 @@ const markdownItOptions = {
   typographer: true
 };
 
-const md = new MarkdownIt('commonmark', markdownItOptions);
+const md = new MarkdownIt(markdownItOptions);
 
 md.use(blockImagePlugin, {
   outputContainer: 'div',
