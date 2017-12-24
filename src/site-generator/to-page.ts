@@ -10,7 +10,9 @@ import { File } from '../interfaces';
 import { extractTitle } from './extract-title';
 
 const markdownItOptions = {
-  // highlight: prismHighlighter
+  // highlight: prismHighlighter,
+  html: true,
+  typographer: true
 };
 
 const md = new MarkdownIt('commonmark', markdownItOptions);

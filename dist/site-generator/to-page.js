@@ -8,7 +8,11 @@ var matter = require("gray-matter");
 var blockImagePlugin = require('markdown-it-block-image');
 var blockEmbedPlugin = require('markdown-it-block-embed');
 var extract_title_1 = require("./extract-title");
-var markdownItOptions = {};
+var markdownItOptions = {
+    // highlight: prismHighlighter,
+    html: true,
+    typographer: true
+};
 var md = new MarkdownIt('commonmark', markdownItOptions);
 md.use(blockImagePlugin, {
     outputContainer: 'div',
